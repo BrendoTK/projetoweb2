@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Comanda</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+<style>
+			/*Estilos Gerais*/
+
+table{
+	margin: auto;
+}
+
+th{
+    background-color: #032D49;
+    color: #ffffff;
+    }
+    td, th {
+      border: 1px solid #004546;
+      text-align: left;
+      padding: 8px;
+    }
+
+
+body{
+    background-color: #e2e1e0;
+    font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Aclonica', cursive;
+}
+
+h2, h3 {
+	text-align: center;
+	font-family: 'Aclonica', sans-serif;;	
+}
+
+/* Estilos para Menu */
+
+
+/*Estilos Estruturais */
+
+*{
+	margin:0;
+}
+
+#tudo{
+    width:100%;
+    margin: 0 auto;
+}
+header{
+    background-color: #F8F4F4;
+}
+
+#cabecalho{
+	text-shadow: 1px 1px black;
+	color:#FFBA00;
+	font-size: 50px;
+    height: auto;
+    max-width: 50%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.box{
+    max-width: 80%;
+    margin:0 auto;
+    padding:20px 0;
+    text-align: justify;
+}
+
+.box h3{
+    padding: 20px 0;
+}
+
+.box a{
+    text-decoration: none;
+    color: #434343;
+}
+
+.box a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background-color: #121BBB;
+    color:#e2e1e0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a{
+    text-decoration:none;
+    color:#e2e1e0;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+
+fieldset{
+	background-color: #CCCCCC;
+	border: 1px solid #003366;
+	padding: 2px;
+}
+
+legend{
+	background-color: #FF0000;
+	border: 1px solid #000000;
+}
+
+@media (
+	max-width:1280px
+	max-height: 720px){
+
+table{
+
+	margin: 80px;
+}
+
+h1, h2, h3 {
+	text-align: left;
+}
+
+}
+</style>
+</head>
+<body>
+	<h1>Brendo's Bar</h1>
+	<h2>Comanda</h2>
+	<form action="" method="post">
+		<table>
+		<tr>
+			<td>Pedido</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><p align="center">Porções</p></td>
+		</tr>
+
+		<tr>
+			<td>Batata Frita
+				<input type="hidden" id="item" value="batatafrita">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 20.00
+				<input type="hidden" id="valor" value="20.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Mandioquinha frita
+				<input type="hidden" id="item" value="mandioquinhafrita">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 15.00
+				<input type="hidden" id="valor" value="15.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Porção de pastéis
+				<input type="hidden" id="item" value="porcaodepasteis">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 18.00
+				<input type="hidden" id="valor" value="18.00">
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><p align="center">Espetinhos Completos</p></td>
+		</tr>
+
+		<tr>
+			<td>Picanha
+				<input type="hidden" id="item" value="picanha">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 23.00
+				<input type="hidden" id="valor" value="23.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Contra Filé
+				<input type="hidden" id="item" value="contrafile">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 21.00
+				<input type="hidden" id="valor" value="21.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Cupim
+				<input type="hidden" id="item" value="cupim">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 19.00
+				<input type="hidden" id="valor" value="19.00">
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><p align="center">Espetinhos Simples</p></td>
+		</tr>
+
+		<tr>
+			<td>Filé com Bacon
+				<input type="hidden" id="item" value="filecombacon">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 19.00
+				<input type="hidden" id="valor" value="19.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Káfta
+				<input type="hidden" id="item" value="kafta">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 22.00
+				<input type="hidden" id="valor" value="22.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Queijo
+				<input type="hidden" id="item" value="queijo">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 20.00
+				<input type="hidden" id="valor" value="20.00">
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><p align="center">Bebidas</p></td>
+		</tr>
+
+		<tr>
+			<td>Cerveja lata
+				<input type="hidden" id="item" value="cervejalata">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 5.00
+				<input type="hidden" id="valor" value="5.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Refrigerante lata
+				<input type="hidden" id="item" value="refrigerantelata">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 6.00
+				<input type="hidden" id="valor" value="6.00">
+			</td>
+		</tr>
+		<tr>
+			<td>Suco copo
+				<input type="hidden" id="item" value="sucocopo">
+			</td>
+			<td><input type="number" id="qt"></td>
+			<td>R$ 8.00
+				<input type="hidden" id="valor" value="8.00">
+			</td>
+		</tr>
+		</table>
+
+		<p align="center">
+		<input type="button" value="efetuar pedido" onclick="efetuarpedido()">
+		</p>
+
+	</form>
+
+	<fieldset>
+		<p align="center"><legend>Resumo dos pedidos</legend></p>
+		<p id="total" align="center">
+
+		</p>
+	</fieldset>
+
+	<script>	
+		function efetuarpedido(){
+			var item = document.querySelectorAll("#item");
+			var qt = document.querySelectorAll("#qt");
+			var valor = document.querySelectorAll("#valor");
+			var x = item.length;
+			var soma = 0;
+
+			for(i=0;i<x;i++){
+				soma += qt[i].value * valor[i].value;
+			}
+
+
+		var total = document.querySelector("#total");
+		total.innerHTML = "Valor Total da Comanda: R$ "+soma;
+		}
+	</script>
+</body>
+</html>
